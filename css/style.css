@@ -1,0 +1,34 @@
+#showText {
+  display: none;
+}
+.showTextOne {
+  display: none;
+}
+.fadeInTheText {
+  opacity: 0;
+}
+
+/* jQuery start */
+#showText1 {
+  display: none;
+}
+.showText3 {
+  display: none;
+}
+
+.head {
+  min-height: 40px;
+  padding: 20px 50px;
+  background-color: antiquewhite;
+  text-align: left;
+  cursor: pointer;
+}
+.head h4 {
+  margin: 0;
+}
+.content {
+  padding: 20px 50px;
+  background-color: aquamarine;
+  text-align: left;
+  display: none;
+}

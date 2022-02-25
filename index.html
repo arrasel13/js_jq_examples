@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Links -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>JS and jQuery Examples</title>
+  </head>
+  <body>
+    
+    <section class="jsExample">
+        <div class="container">
+            
+            <div class="row">
+              <div class="col-12 text-center">
+                <!-- 1st Example -->
+                <h1 class="text-success">1st Example</h1>
+                <h2>Click button Change text</h2>
+                <button class="btn btn-primary" onclick="clickTheButton()">Change text</button>
+                <h3 id="changeText">This text will change</h3>
+
+                <br><br>
+                <!-- 2nd Example -->
+                <h1 class="text-success" class="text-center">2nd Example</h1>
+                <button class="btn btn-primary" type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+                <p class="text-center" id="demo">Date will display here</p>
+
+                <br><br>
+                <!-- 3rd Example -->
+                <h1 class="text-success">3rd Example</h1>
+                <h2>Click button Change Font size</h2>
+                <button class="btn btn-primary" onclick="changeFontSize()">Change Font size</button>
+                <p id="changeFontSize">Change font size</p>
+
+                <br><br>
+                <!-- 4th Example -->
+                <h1 class="text-success">4th Example</h1>
+                <h2>Click button Hide the text</h2>
+                <button class="btn btn-primary" onclick="hideText()">Hide text</button>
+                <p id="hideText">This text will hide after click</p>
+
+                <br><br>
+                <!-- 5th Example -->
+                <h1 class="text-success">5th Example</h1>
+                <h2>Click button display block</h2>
+                <button class="btn btn-primary" onclick="displayBlock()">Display Block</button>
+                <span id="displayBlock">This text will be block element</span>&nbsp;
+                <span>Another text</span>
+
+                <br><br>
+                <!-- 6th Example -->
+                <h1 class="text-success">6th Example</h1>
+                <h2>Click button display alert</h2>
+                <button class="btn btn-primary" onclick="showAlert()">Alert Message</button>
+
+                <br><br>
+                <!-- 7th Example -->
+                <h1 class="text-success">7th Example</h1>
+                <h2>Click button for printing this page</h2>
+                <button class="btn btn-primary" onclick="printThePage()">Print this page</button>
+
+                <br><br>
+                <!-- 8th Example -->
+                <h1 class="text-success">8th Example</h1>
+                <h2>Click button and show the text</h2>
+                <button class="btn btn-primary" onclick="showText()">Show the text</button>
+                <p id="showText">Lorem ipsum dolor sit amet</p>
+
+
+                <br><br>
+                <!-- 9th Example -->
+                <h1 class="text-success">9th Example</h1>
+                <h2>Click button and show the text by class name</h2>
+                <button class="btn btn-primary" onclick="showTextOne()">Show text using class name</button>
+                <p class="showTextOne">Lorem ipsum dolor sit amet</p>
+
+
+                <br><br>
+                <!-- 10th Example -->
+                <h1 class="text-success">10th Example</h1>
+                <h2>Click button and get a border</h2>
+                <button class="btn btn-primary" onclick="getBorder()">Click and get a border</button>
+                <p class="getBorder">Lorem ipsum dolor sit amet</p>
+
+
+                <br><br>
+                <!-- 11th Example -->
+                <h1 class="text-success">11th Example</h1>
+                <h2>Click button and change the image</h2>
+                <button class="btn btn-primary" onclick="changeImage()">Change image</button><br><br>
+                <img class="changeImage" src="https://media.istockphoto.com/photos/golden-free-text-on-the-wall-picture-id1286880480" width="100px" height="80px" alt="">
+
+
+                <br><br>
+                <!-- 12th Example -->
+                <h1 class="text-success">12th Example</h1>
+                <h2>Click button and change the URL</h2>
+                <button class="btn btn-primary" onclick="changeURL()">Change the URL</button><br><br>
+                <a class="changeURL" href="#">Google link</a>
+
+
+                <br><br>
+                <!-- 13th Example -->
+                <h1 class="text-success">13th Example</h1>
+                <h2>Mouse over and change the text</h2>
+                <button class="btn btn-primary" onmouseover="mouseOverChangeText()">Change text on mouse over</button><br><br>
+                <p class="mouseOverChangeText">Change the text on mouse over</p>
+
+
+                <br><br>
+                <!-- 14th Example -->
+                <h1 class="text-success">14th Example</h1>
+                <h2>Mouse out and change the text</h2>
+                <button class="btn btn-primary" onmouseout="mouseOutChangeText()">Change text on mouse out</button><br><br>
+                <p class="mouseOutChangeText">Change the text on mouse out</p>
+
+
+                <br><br>
+                <!-- 15th Example -->
+                <h1 class="text-success">15th Example</h1>
+                <h2>Double Click and change the text</h2>
+                <button class="btn btn-primary" ondblclick="doubleClickChangeText()">Change text on double click</button><br><br>
+                <p class="doubleClickChangeText">Change the text on mouse double click</p>
+
+
+                <br><br>
+                <!-- 16th Example -->
+                <h1 class="text-success">16th Example</h1>
+                <h2>Click the button and then press down key and change the text</h2>
+                <button class="btn btn-primary" onkeydown="keyDownChangeText()">Click and press down key</button><br><br>
+                <p class="keyDownChangeText">Change the text on mouse click and down key</p>
+
+
+                <br><br>
+                <!-- 17th Example -->
+                <h1 class="text-success">17th Example</h1>
+                <h2>Click the button and then press any key and change the text</h2>
+                <button class="btn btn-primary" onkeypress="keyPressChangeText()">Click and press any key</button><br><br>
+                <p class="keyPressChangeText">Change the text on mouse click and press any key</p>
+
+
+                <br><br>
+                <!-- 18th Example -->
+                <h1 class="text-success">18th Example</h1>
+                <h2>Click the button and fadeout the text</h2>
+                <button class="btn btn-primary" onclick="fadeOutTheText()">FadeOut</button><br><br>
+                <p class="fadeOutTheText">Fade out this text</p>
+
+
+                <br><br>
+                <!-- 19th Example -->
+                <h1 class="text-success">19th Example</h1>
+                <h2>Click the button and fadein the text</h2>
+                <button class="btn btn-primary" onclick="fadeInTheText()">FadeIn</button><br><br>
+                <p class="fadeInTheText">Fade in this text</p>
+
+
+                <br><br>
+                <!-- 20th Example -->
+                <h1 class="text-success">20th Example</h1>
+                <h2>FadeIn and FadeOut the text</h2>
+                <button class="btn btn-primary" onclick="fadeOutTheText1()">FadeOut</button> &nbsp;
+                <button class="btn btn-primary" onclick="fadeInTheText1()">FadeIn</button>
+                <p class="fadeInOutTheText">Fade in and out this text</p>
+
+                <br><br><br><br><br><br>
+
+              </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- jQuery start -->
+
+    <section class="jqExample">
+      <div class="container">
+          
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1>jQuery Examples are here</h1>
+              <!-- 1st Example -->
+              <h1 class="text-success">1st Example</h1>
+              <h2>Click button Change text</h2>
+              <button class="btn btn-primary" id="clickTheButton">Change text</button>
+              <h3 id="changeText1">This text will change</h3>
+
+              <br><br>
+              <!-- 2nd Example -->
+              <h1 class="text-success" class="text-center">2nd Example</h1>
+              <div class="head"><h4>Click here and collaps the content</h4></div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae quaerat sint optio cumque ea perspiciatis fugit! Eius libero quod, labore dolor modi voluptate placeat odit quae fugiat cumque veritatis aliquid odio sequi nemo, asperiores natus autem blanditiis officiis, quidem nihil mollitia quibusdam possimus quas. Ducimus magni placeat deserunt accusantium molestias fugit. Ad aliquam maiores aliquid unde porro, voluptatibus fugit totam, incidunt, iusto sit sapiente. Magni nesciunt distinctio delectus pariatur ipsa a error laboriosam nisi atque voluptatem sequi consequuntur aliquam iure doloremque, possimus numquam eaque, facilis sint explicabo suscipit odio autem! Distinctio quasi voluptate sed molestiae culpa quis deserunt quibusdam modi obcaecati ipsum, est quia cumque sapiente hic explicabo provident similique voluptatibus. Alias aut iusto reprehenderit vel magni voluptatem optio repellendus qui sed! Consequuntur similique, provident saepe reiciendis dolor libero at in consequatur totam? Quibusdam placeat perferendis quam reiciendis beatae iste eveniet magni cupiditate nemo nostrum ratione architecto nihil unde totam, natus aut ut repudiandae laborum optio. Commodi, aspernatur numquam. Incidunt voluptate expedita voluptatibus aut, distinctio atque dolor vitae nisi sed neque doloribus reprehenderit, ipsa vero, quas fuga eum. Nostrum non doloribus unde delectus explicabo eos nam repellendus, exercitationem deserunt in eligendi laboriosam quia amet illo molestiae cumque reprehenderit mollitia.</p>
+              </div>
+
+              <br><br>
+              <!-- 3rd Example -->
+              <h1 class="text-success">3rd Example</h1>
+              <h2>Click button Change Font size</h2>
+              <button class="btn btn-primary" id="changeFontSizes">Change Font size</button>
+              <p id="changeFontSize1">Change font size</p>
+
+              <br><br>
+              <!-- 4th Example -->
+              <h1 class="text-success">4th Example</h1>
+              <h2>Click button Hide the text</h2>
+              <button class="btn btn-primary" id="hideTexts">Hide text</button>
+              <p id="hideText1">This text will hide after click</p>
+
+              <br><br>
+              <!-- 5th Example -->
+              <h1 class="text-success">5th Example</h1>
+              <h2>Click button display block</h2>
+              <button class="btn btn-primary" id="displayBlocks">Display Block</button>
+              <span id="displayBlock1">This text will be block element</span>&nbsp;
+              <span>Another text</span>
+
+              <br><br>
+              <!-- 6th Example -->
+              <h1 class="text-success">6th Example</h1>
+              <h2>Click button display alert</h2>
+              <button class="btn btn-primary" id="showAlert">Alert Message</button>
+
+              <br><br>
+              <!-- 7th Example -->
+              <h1 class="text-success">7th Example</h1>
+              <h2>Click button for printing this page</h2>
+              <button class="btn btn-primary" id="printThePage">Print this page</button>
+
+              <br><br>
+              <!-- 8th Example -->
+              <h1 class="text-success">8th Example</h1>
+              <h2>Click button and show the text</h2>
+              <button class="btn btn-primary" id="showTexts">Show the text</button>
+              <p id="showText1">Lorem ipsum dolor sit amet</p>
+
+
+              <br><br>
+              <!-- 9th Example -->
+              <h1 class="text-success">9th Example</h1>
+              <h2>Click button and show the text by class name</h2>
+              <button class="btn btn-primary showText2">Show text using class name</button>
+              <p class="showText3">Lorem ipsum dolor sit amet</p>
+
+
+              <br><br>
+              <!-- 10th Example -->
+              <h1 class="text-success">10th Example</h1>
+              <h2>Click button and get a border</h2>
+              <button class="btn btn-primary getBorder">Click and get a border</button>
+              <p class="getBorder1">Lorem ipsum dolor sit amet</p>
+
+
+              <br><br>
+              <!-- 11th Example -->
+              <h1 class="text-success">11th Example</h1>
+              <h2>Click button and change the image</h2>
+              <button class="btn btn-primary changeImage">Change image</button><br><br>
+              <img class="changeImage1" src="https://media.istockphoto.com/photos/golden-free-text-on-the-wall-picture-id1286880480" width="100px" height="80px" alt="">
+
+
+              <br><br>
+              <!-- 12th Example -->
+              <h1 class="text-success">12th Example</h1>
+              <h2>Click button and change the URL</h2>
+              <button class="btn btn-primary changeURL">Change the URL</button><br><br>
+              <a class="changeURL1" href="#">Google link</a>
+
+
+              <br><br>
+              <!-- 13th Example -->
+              <h1 class="text-success">13th Example</h1>
+              <h2>Mouse over and change the text</h2>
+              <button class="btn btn-primary mouseOverChangeText">Change text on mouse over</button><br><br>
+              <p class="mouseOverChangeText1">Change the text on mouse over</p>
+
+
+              <br><br>
+              <!-- 14th Example -->
+              <h1 class="text-success">14th Example</h1>
+              <h2>Mouse out and change the text</h2>
+              <button class="btn btn-primary mouseOutChangeText">Change text on mouse out</button><br><br>
+              <p class="mouseOutChangeText1">Change the text on mouse out</p>
+
+
+              <br><br>
+              <!-- 15th Example -->
+              <h1 class="text-success">15th Example</h1>
+              <h2>Double Click and change the text</h2>
+              <button class="btn btn-primary doubleClickChangeText">Change text on double click</button><br><br>
+              <p class="doubleClickChangeText1">Change the text on mouse double click</p>
+
+
+              <br><br>
+              <!-- 16th Example -->
+              <h1 class="text-success">16th Example</h1>
+              <h2>Click the button and then press down key and change the text</h2>
+              <button class="btn btn-primary keyDownChangeText">Click and press down key</button><br><br>
+              <p class="keyDownChangeText1">Change the text on mouse click and down key</p>
+
+
+              <br><br>
+              <!-- 17th Example -->
+              <h1 class="text-success">17th Example</h1>
+              <h2>Click the button and then press any key and change the text</h2>
+              <button class="btn btn-primary keyPressChangeText">Click and press any key</button><br><br>
+              <p class="keyPressChangeText1">Change the text on mouse click and press any key</p>
+
+
+              <br><br>
+              <!-- 18th, 19th and 20th Example -->
+              <h1 class="text-success">18th, 19th and 20th Example</h1>
+              <h2>FadeIn and FadeOut the text</h2>
+              <button class="btn btn-primary fadeOutTheText2">FadeOut</button> &nbsp;
+              <button class="btn btn-primary fadeInTheText2">FadeIn</button> &nbsp;
+              <button class="btn btn-primary fadeInOutToggle">Toggle</button>
+              <p class="fadeInOutTheText1">Fade in and out this text</p>
+
+              <br><br><br><br><br><br>
+
+            </div>
+          </div>
+
+      </div>
+  </section>
+
+
+    <!-- JS Links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
